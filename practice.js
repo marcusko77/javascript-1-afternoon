@@ -18,7 +18,12 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function isTyler(name){
+  if(name == 'Tyler') {
+    return true
+  }
+  return false
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -28,8 +33,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
-
+function getName(){
+  return prompt("Please enter your name");
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -41,7 +47,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function welcome(){
+  alert("Welcome, " + getName());
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -51,7 +59,7 @@ var name = 'Tyler';
 */
 
 //Answer Here
-
+//A parameter is a declaration, while an argument is something passed through a function.
 
 
 ////////// PROBLEM 5 //////////
@@ -62,7 +70,7 @@ var name = 'Tyler';
 
 //Answer Here
 
-
+//null, false, undefined, 0, NaN
 
 ////////// PROBLEM 6 //////////
 
@@ -71,7 +79,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+  function myName(){
+    return "Marcus Ko"
+  }
 
 
 /*
@@ -80,6 +90,7 @@ var name = 'Tyler';
 
 //Code Here
 
+var newMyName = myName
 
 
 /*
@@ -88,7 +99,7 @@ var name = 'Tyler';
 
 // Code Here
 
-
+alert("new name");
 
 ////////// PROBLEM 7 //////////
 
@@ -97,6 +108,12 @@ var name = 'Tyler';
 */
 
 //Code Here
+function outerFn(){
+  return function(){
+    return "marcus"
+  }
+}
+
 
 
 
@@ -105,11 +122,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+var innerFn = outerFn()
 
 
 /* 
   Now invoke innerFn.
-*/
+*/innerFn;
 
 // Code Here
